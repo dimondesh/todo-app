@@ -63,7 +63,7 @@ Follow these steps to run the project locally.
 ### 1. Clone the repository
 ```bash
 git clone https://github.com/dimondesh/todo-app.git
-cd task-manager
+cd todo-app
 ```
 
 2. Setup Backend
@@ -90,8 +90,9 @@ npx prisma generate
 npx prisma db push
 ```
 
-```bash
+
 # 3. Start Backend Server
+```bash
 npm run dev
 ```
 Server will start on http://localhost:5000
