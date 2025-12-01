@@ -109,7 +109,7 @@ npm install
 ```
 # 1. Configure API URL
 ```bash
-"NEXT_PUBLIC_API_URL=http://localhost:4000/api"
+"NEXT_PUBLIC_API_URL=http://localhost:5000/api"
 ```
 
 # 2. Start Frontend Application
