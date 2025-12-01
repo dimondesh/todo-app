@@ -1,0 +1,15 @@
+export const CATEGORIES = [
+  "General",
+  "Work",
+  "Personal",
+  "Study",
+  "Health",
+  "Music",
+  "Coding",
+  "Finance",
+  "Home",
+  "Shopping",
+  "Travel",
+  "Ideas",
+  "Urgent",
+] as const;
