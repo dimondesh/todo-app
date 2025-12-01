@@ -1,6 +1,6 @@
 # 🚀 Task Manager
 
-![Next.js](https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=next.js)
+![Next.js](https://img.shields.io/badge/Next.js-16-black?style=for-the-badge&logo=next.js)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=for-the-badge&logo=typescript)
 ![Node.js](https://img.shields.io/badge/Node.js-20-green?style=for-the-badge&logo=node.js)
 ![Prisma](https://img.shields.io/badge/Prisma-5.0-white?style=for-the-badge&logo=prisma)
