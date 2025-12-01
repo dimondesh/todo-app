@@ -60,53 +60,42 @@ Follow these steps to run the project locally.
 * npm or yarn
 * A PostgreSQL database URL
 
-### 1. Clone the Repository
-Bash
-git clone [https://github.com/dimondesh/todo-app.git](https://github.com/dimondesh/todo-app.git)
+### 1. Clone the repository
+```bash
+git clone [https://github.com/your-username/task-manager.git](https://github.com/your-username/task-manager.git)
 cd task-manager
-Bash
-
-2. Backend Setup
-Navigate to the backend folder and install dependencies:
+2. Setup Backend
+Open your terminal and run the following commands to set up the server and database:
 
 Bash
 
 cd backend
 npm install
-Create a .env file in the backend folder:
 
-Env snippet
+# 1. Create .env file (Copy this block or create manually)
+echo "PORT=4000" > .env
+echo "DATABASE_URL=postgresql://USER:PASSWORD@HOST:PORT/DATABASE" >> .env
+echo "JWT_SECRET=super_secret_key_change_me" >> .env
 
-PORT=5000
-DATABASE_URL="your_postgres_connection_string"
-JWT_SECRET="your_super_secret_key"
-Initialize the database:
-
-Bash
-
+# 2. Initialize Database
 npx prisma generate
 npx prisma db push
-Start the server:
 
-Bash
-
+# 3. Start Backend Server
 npm run dev
-# Server will run on http://localhost:5000
-3. Frontend Setup
-Open a new terminal, navigate to the frontend folder, and install dependencies:
+Server will start on http://localhost:4000
+
+3. Setup Frontend
+Open a new terminal tab (keep the backend running) and navigate to the frontend folder:
 
 Bash
 
 cd ../frontend
 npm install
-Create a .env.local file in the frontend folder:
 
-Code snippet
+# 1. Configure API URL
+echo "NEXT_PUBLIC_API_URL=http://localhost:4000/api" > .env.local
 
-NEXT_PUBLIC_API_URL=http://localhost:4000/api
-Start the client:
-
-Bash
-
+# 2. Start Frontend Application
 npm run dev
-# App will run on http://localhost:3000
+Client will start on http://localhost:3000
