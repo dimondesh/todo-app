@@ -64,38 +64,55 @@ Follow these steps to run the project locally.
 ```bash
 git clone [https://github.com/your-username/task-manager.git](https://github.com/your-username/task-manager.git)
 cd task-manager
+```
+
 2. Setup Backend
 Open your terminal and run the following commands to set up the server and database:
 
-Bash
+```bash
 
 cd backend
 npm install
 
+```
+
 # 1. Create .env file (Copy this block or create manually)
-echo "PORT=4000" > .env
-echo "DATABASE_URL=postgresql://USER:PASSWORD@HOST:PORT/DATABASE" >> .env
-echo "JWT_SECRET=super_secret_key_change_me" >> .env
+```bash
+"PORT=5000"
+"DATABASE_URL=postgresql://USER:PASSWORD@HOST:PORT/DATABASE"
+"JWT_SECRET=super_secret_key_change_me"
+
+```
 
 # 2. Initialize Database
+```bash
 npx prisma generate
 npx prisma db push
+```
 
+```bash
 # 3. Start Backend Server
 npm run dev
-Server will start on http://localhost:4000
+```
+Server will start on http://localhost:5000
+
 
 3. Setup Frontend
 Open a new terminal tab (keep the backend running) and navigate to the frontend folder:
 
-Bash
+```bash
 
 cd ../frontend
 npm install
 
+```
 # 1. Configure API URL
-echo "NEXT_PUBLIC_API_URL=http://localhost:4000/api" > .env.local
+```bash
+"NEXT_PUBLIC_API_URL=http://localhost:4000/api"
+```
 
 # 2. Start Frontend Application
+```bash
 npm run dev
+```
 Client will start on http://localhost:3000
